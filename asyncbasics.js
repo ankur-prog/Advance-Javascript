@@ -38,6 +38,19 @@ setInterval(() => {
 }
 , 1000);
 
+// The clearInterval function can be used to stop the interval from running. For example, the following code will log "Hello, world!" to the console every second
+// for 5 seconds, and then stop:
+let count = 0;
+const intervalId = setInterval(() => {
+  console.log('Hello, world!');
+  count++;
+  if (count === 5) {
+    clearInterval(intervalId);
+  }
+}, 1000);
+
+// Path: asyncbasics.js
+
 
 
 
